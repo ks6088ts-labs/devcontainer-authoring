@@ -1,0 +1,22 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Default
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Extensions
+[*.{js,py,yml}]
+charset = utf-8
+indent_size = 2
+
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
+
+[{package.json,.vscode/**.json,.textlintrc}]
+indent_style = space
+indent_size = 2
