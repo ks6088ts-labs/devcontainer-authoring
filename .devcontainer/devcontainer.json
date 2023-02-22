@@ -1,14 +1,17 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/alpine
 {
-	"name": "authoring",
-	"build": {
-	  "dockerfile": "../Dockerfile"
-	},
-	"customizations": {
-	  "vscode": {
-		"extensions": ["taichi.vscode-textlint", "EditorConfig.EditorConfig"]
-	  }
-	}
+  "name": "authoring",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "taichi.vscode-textlint",
+        "EditorConfig.EditorConfig",
+        "marp-team.marp-vscode"
+      ]
+    }
   }
-  
+}

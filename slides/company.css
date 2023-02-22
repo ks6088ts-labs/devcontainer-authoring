@@ -1,0 +1,48 @@
+/* @theme company */
+
+@import 'default';
+
+section {
+    justify-content: start;
+    font-family: "Yu Gothic UI", "Segoe UI";
+    font-size: 32px;
+    padding: 40px;
+    background-image: url(./logo.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 20%;
+}
+
+section.title {
+    --title-height: 130px;
+    --subtitle-height: 70px;
+
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr var(--title-height) var(--subtitle-height) 1fr;
+    grid-template-areas: "." "title" "subtitle" ".";
+}
+
+section.title h1,
+section.title h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: var(--area-height);
+    line-height: var(--area-height);
+    font-size: calc(var(--area-height) * 0.7);
+
+    border: 1px dashed gray;
+    /* debug */
+}
+
+section.title h1 {
+    grid-area: title;
+    --area-height: var(--title-height);
+}
+
+section.title h2 {
+    grid-area: subtitle;
+    --area-height: var(--subtitle-height);
+}

@@ -3,5 +3,8 @@
     "titleBar.activeBackground": "#3CB371",
     "titleBar.activeForeground": "#FFFFFF"
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "markdown.marp.themes": [
+    "./slides/company.css"
+  ]
 }
