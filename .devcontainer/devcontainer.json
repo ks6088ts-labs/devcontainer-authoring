@@ -1,0 +1,24 @@
+{
+  "name": "authoring",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "args": {
+      "VARIANT": "20.10.0-bookworm-slim"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["taichi.vscode-textlint", "EditorConfig.EditorConfig"]
+    }
+  },
+  "remoteUser": "vscode",
+  "features": {
+    // https://github.com/orgs/devcontainers/packages
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "version": "latest"
+    }
+  }
+}
