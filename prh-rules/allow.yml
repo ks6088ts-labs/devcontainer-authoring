@@ -1,0 +1,2 @@
+# https://github.com/textlint/textlint-filter-rule-allowlist?tab=readme-ov-file#example-ignore-math-extension
+- "/\\$\\$[\\s\\S]*?\\$\\$/m"
