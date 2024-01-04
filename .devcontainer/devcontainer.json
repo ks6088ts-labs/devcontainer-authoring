@@ -1,11 +1,6 @@
 {
   "name": "authoring",
-  "build": {
-    "dockerfile": "../Dockerfile",
-    "args": {
-      "VARIANT": "20.10.0-bookworm-slim"
-    }
-  },
+  "image": "ks6088ts/devcontainer-authoring",
   "customizations": {
     "vscode": {
       "extensions": ["taichi.vscode-textlint", "EditorConfig.EditorConfig"]
