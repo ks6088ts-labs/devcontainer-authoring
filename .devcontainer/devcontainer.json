@@ -10,15 +10,5 @@
     "vscode": {
       "extensions": ["taichi.vscode-textlint", "EditorConfig.EditorConfig"]
     }
-  },
-  "remoteUser": "vscode",
-  "features": {
-    // https://github.com/orgs/devcontainers/packages
-    "ghcr.io/devcontainers/features/git:1": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers/features/github-cli:1": {
-      "version": "latest"
-    }
   }
 }

@@ -16,7 +16,7 @@ info: ## show info
 
 .PHONY: install-deps-dev
 install-deps-dev: ## install dependencies for development
-	yarn
+	yarn install --frozen-lockfile && yarn cache clean
 
 .PHONY: fix
 fix: ## fix
