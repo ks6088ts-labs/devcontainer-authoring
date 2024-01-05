@@ -35,4 +35,4 @@ docker-build: ## build docker image
 
 .PHONY: docker-run
 docker-run: ## run docker container
-	docker run --rm -it -v $(PWD):/workspace -w /workspace $(DOCKER_IMAGE_NAME) /bin/bash
+	docker run --rm -it -w /workspace $(DOCKER_IMAGE_NAME) /bin/bash
